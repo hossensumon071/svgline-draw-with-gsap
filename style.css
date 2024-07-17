@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #02000c;
+}
+
+.redbox {
+  height: 100vh;
+  width: 100%;
+  background-color: #8283d0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.redbox h1 {
+    font-size: 10vw;
+    color: white;
+}
+
+
+.animation-section {
+  position: relative;
+  min-height: 250vh; /* Ensure there's enough height for scrolling */
+  /* Hide overflow to avoid any scrollbar issues */
+  width: 90vw;
+}
+.yellowbox {
+  height: 200vh;
+  width: 100%;
+}
+#svg-line {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: auto;
+}
+
+.content-box {
+  width: 370px;
+  height: 180px;
+  color: #fff;
+  position: absolute;
+}
+
+#box1 {
+    top: 397px;
+    left: 360px;
+}
+
+#box2 {
+  top: 700px;
+  right: 200px;
+}
+
+#box3 {
+  top: 1300px;
+  right: 320px;
+}
+
+#box4 {
+  top: 1700px;
+  left: 300px;
+}
+
+#box5 {
+  bottom: 10px;
+  left: 832px;
+}
+
+
+.eleips{
+    position: absolute;
+    top: 445px;
+    left: 142px;
+    width: 1.875rem;
+    height: 1.875rem;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.33), 0 0 100px 67px #8283d0;
+    border-radius: 50%;
+    background-color: white;
+    z-index: 2;
+}
+
+.eleips2 {
+    position: absolute;
+    top: 743px;
+    right: 5px;
+    width: 1.875rem;
+    height: 1.875rem;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.33), 0 0 100px 67px #8283d0;
+    border-radius: 50%;
+    background-color: white;
+    z-index: 2;
+}
+.eleips3 {
+    position: absolute;
+    top: 1300px;
+    right: 965px;
+    width: 1.875rem;
+    height: 1.875rem;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.33), 0 0 100px 67px #8283d0;
+    border-radius: 50%;
+    background-color: white;
+    z-index: 2;
+}
+
+.eleips4 {
+    position: absolute;
+    top: 1727px;
+    right: 868px;
+    width: 1.875rem;
+    height: 1.875rem;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.33), 0 0 100px 67px #8283d0;
+    border-radius: 50%;
+    background-color: white;
+    z-index: 2;
+}
+
+.eleips5 {
+    position: absolute;
+    bottom: 136px;
+    left: 616px;
+    width: 1.875rem;
+    height: 1.875rem;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.33), 0 0 100px 67px #8283d0;
+    border-radius: 50%;
+    background-color: white;
+    z-index: 2;
+}
