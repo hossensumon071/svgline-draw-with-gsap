@@ -1,6 +1,9 @@
-gsap.registerPlugin(ScrollTrigger, DrawSVGPlugin);
+gsap.registerPlugin(ScrollTrigger);
 
-gsap.set("#line", { drawSVG: "0%" }); // Set initial state of the line
+const path = document.querySelector("#line");
+const pathLength = path.getTotalLength();
+
+gsap.set(path, { strokeDasharray: pathLength, strokeDashoffset: pathLength });
 
 const mainTimeline = gsap.timeline({
   scrollTrigger: {
@@ -13,8 +16,8 @@ const mainTimeline = gsap.timeline({
 });
 
 // Animate the SVG line
-mainTimeline.to("#line", {
-  drawSVG: "100%",
+mainTimeline.to(path, {
+  strokeDashoffset: 0,
   ease: "none",
   duration: 10 // Adjust duration to control the speed of the line drawing
 });
@@ -23,7 +26,7 @@ mainTimeline.to("#line", {
 mainTimeline.from("#box1, .eleips", {
   opacity: 0,
   duration: 1
-}, 0.5); // Starts at the beginning of the timeline
+}, 0.5); // Starts shortly after the beginning of the timeline
 
 // Animate the second content box in sequence
 mainTimeline.from("#box2, .eleips2", {
